@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .font-pacifico {
+    font-family: 'Pacifico', cursive;
+  }
+  
+  .payment-logo-dark-mode {
+    filter: brightness(0) invert(1);
+  }
+  
+  .payment-logo-light-mode {
+    filter: none;
+  }
+  
+  /* Auth Modal Styles */
+  .auth-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .auth-form-outer-container {
+    position: relative;
+    max-width: 768px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+  
+  /* Hide scrollbar for the container but allow scrolling */
+  .auth-form-outer-container::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+  .auth-form-outer-container {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .auth-modal-close-button {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: #fff;
+    color: #333;
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 1001;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: background-color 0.2s, color 0.2s;
+  }
+  
+  .auth-modal-close-button:hover {
+    background-color: #f0f0f0;
+    color: #000;
+  }
+  
+  /* Curved Welcome Panel */
+  .auth-container {
+    display: flex;
+    width: 100%;
+    min-height: 500px;
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  .auth-panel {
+    width: 45%;
+    background: linear-gradient(135deg, #4f46e5, #3b82f6);
+    color: white;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+  }
+  
+  .auth-form-area {
+    width: 55%;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  /* Mobile adjustments */
+  @media (max-width: 768px) {
+    .auth-form-outer-container {
+      max-height: 100vh;
+      padding: 0;
+    }
+  
+    .auth-modal-close-button {
+      top: 10px;
+      right: 10px;
+      background-color: rgba(255,255,255,0.8);
+    }
+  
+    .mobile-only {
+      display: block;
+    }
+  
+    .auth-container {
+      flex-direction: column;
+      border-radius: 0;
+    }
+  
+    .auth-panel {
+      width: 100%;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+      border-bottom-left-radius: 0;
+    }
+  
+    .auth-form-area {
+      width: 100%;
+    }
+  }
+  
