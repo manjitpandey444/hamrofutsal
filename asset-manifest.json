@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/hamrofutsal/static/css/main.aa99cfcd.css",
+    "main.js": "/hamrofutsal/static/js/main.721965d6.js",
+    "index.html": "/hamrofutsal/index.html",
+    "main.aa99cfcd.css.map": "/hamrofutsal/static/css/main.aa99cfcd.css.map",
+    "main.721965d6.js.map": "/hamrofutsal/static/js/main.721965d6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.aa99cfcd.css",
+    "static/js/main.721965d6.js"
+  ]
+}
